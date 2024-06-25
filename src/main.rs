@@ -22,7 +22,7 @@ fn main() {
 fn git_commands() -> Result<String, String> {
     command("git", &["add", "."])?;
     command("git", &["commit", "-m", "updated README.md"])?;
-    command("git", &["push", "-u", "master"])
+    command("git", &["push", "-u", "origin", "master"])
 }
 
 fn write_readme() -> io::Result<()> {
