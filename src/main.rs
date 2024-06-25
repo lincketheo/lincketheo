@@ -62,7 +62,7 @@ fn write_readme() -> io::Result<()> {
     let _ = MkDown::new("./README.md")?
         .write_headerln(1, "Theo Lincke")?
         .write_bodyln("__Welcome to my github page__")?
-        .write_headerln(2, "Visit my [Website](https://lincketheo.com)")?
+        .write_headerln(2, "Visit my [Website](https://theolincke.com)")?
         .write_headerln(
             2,
             "Or browse my [projects](https://github.com/lincketheo?tab=repositories)",
