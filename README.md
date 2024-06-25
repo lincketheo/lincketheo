@@ -25,7 +25,7 @@ fn main() -> io::Result<()> {
 fn git_commands() -> io::Result<ExitStatus> {
     command("git", &["add", "."])?;
     command("git", &["commit", "-m", "updated README.md"])?;
-    command("git", &["push", "-u", "origin", "master"])
+    command("git", &["push", "-u", "origin", "main"])
 }
 
 fn write_readme() -> io::Result<()> {
