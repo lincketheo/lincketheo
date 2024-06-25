@@ -23,7 +23,7 @@ fn main() -> io::Result<()> {
 fn git_update() -> io::Result<ExitStatus> {
     command_all_stdout("git", &["add", "."])?;
     command_all_stdout("git", &["commit", "-m", "updated README.md"])?;
-    command_all_stdout("git", &["push", "-u", "origin", "main", "--force"]) // You could add more logic to
+    command_all_stdout("git", &["push", "-u", "origin", "main", "--force"]) // You could add more logic, but that would make this script longer
 }
 
 struct MkDown {
