@@ -8,6 +8,7 @@ fn main() {
         return;
     }
 
+    println!("HERE");
     match git_commands() {
         Ok(stdout) => {
             println!("{}", stdout);
