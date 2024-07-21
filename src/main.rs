@@ -67,7 +67,7 @@ fn write_readme() -> io::Result<()> {
             2,
             "Or browse my [projects](https://github.com/lincketheo?tab=repositories)",
         )?
-        .write_codeln(&contents, "rust")?;
+        .write_codeln(&contents, "c")?;
 
     Ok(())
 }
