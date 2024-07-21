@@ -57,7 +57,7 @@ impl MkDown {
 }
 
 fn write_readme() -> io::Result<()> {
-    let contents = fs::read_to_string("./src/main.rs")?;
+    let contents = fs::read_to_string("./main.c")?;
 
     let _ = MkDown::new("./README.md")?
         .write_headerln(1, "Theo Lincke")?
@@ -67,7 +67,6 @@ fn write_readme() -> io::Result<()> {
             2,
             "Or browse my [projects](https://github.com/lincketheo?tab=repositories)",
         )?
-        .write_bodyln("This README.md was generated like this:")?
         .write_codeln(&contents, "rust")?;
 
     Ok(())
