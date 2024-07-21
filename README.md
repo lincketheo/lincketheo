@@ -7,6 +7,7 @@ __Welcome to my github page__
 
 int main() {
   printf("Hello Github!\n");
+  return 0;
 }
 
 ```
